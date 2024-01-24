@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		@await Html.PartialAsync("MetatagsPartial")
+		@await Html.PartialAsync("CssPartial")
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				@await Html.PartialAsync("HeaderPartial")
+					@await Html.PartialAsync("MenuPartial")
+					@await Html.PartialAsync("BannerPartial")
+					@await Html.PartialAsync("MainPartial")
+					@await Html.PartialAsync("ContactPartial")
+					@await Html.PartialAsync("FooterPartial")
+			</div>
+		@await Html.PartialAsync("ScriptsPartial")
+
+	</body>
+</html>
